@@ -1,12 +1,21 @@
+#V0.1
 import json,http.client,time
 ParseData = {
 	'Addres':'api.parse.com',
 	'port': 443,
-	'AppKey':'rwSpEIth88vMWsLr4uTR4YnlyPYW3X0I6UgaWz8b',
-	'APIkey':'HBYG6SfkEApOWM3ljZ61k4gMIup6bLsmfHdUMDxS',
-	'Class':'Tasks',
+	'AppKey':'[PlaceHold]',
+	'APIkey':'[PlaceHold]',
+	'Class':'[PlaceHold]',
 	'dataHead':'results'
 }
+
+def DataCheck():
+	tempLis = [ParseData['AppKey'],ParseData['APIkey'],ParseData['Class']]
+	for e in tempLis:
+		if e == '[PlaceHold]':
+			okay = False
+		else:
+			okay = True
 class standard:
 	def newLine(num):
 		for e in range(0,int(num)):
